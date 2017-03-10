@@ -16,9 +16,11 @@
 			<div class="headline">
 				<h1>Tristanus</h1>
 			</div>		
-			<video id="bgvid" src="media/bg.mp4" type="video/mp4" autoplay="true" loop="true"/>	
+			<video id="bgvid" src="media/bg.mp4" type="video/mp4" autoplay="true" loop="true">
 
-			<audio id="bgaud" src="media/nf.mp3"" autoplay="true" hidden="true" loop="true"/>
+			<script>
+				document.write("<audio id=\"bgaud\" src=" + audioPath +" autoplay=\"true\" hidden=\"true\" loop=\"true\"/>");
+			</script>
 		</div>
 			
 	</body>

@@ -17,3 +17,15 @@ function onKeyDown(event) {
 }
 
 window.addEventListener("keydown", onKeyDown, false);
+
+var randomSong;
+
+function songSelecter(){
+    var songs = ["kanye", "mansion", "real", "timmy"];
+
+    var rand = Math.floor(Math.random() * songs.length);
+    randomSong = songs[rand];
+}
+
+songSelecter();
+var audioPath = "files/media/" + randomSong + ".mp3";
